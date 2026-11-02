@@ -15,17 +15,17 @@ def telegram(x, y, w, h):
     bars = ''.join(f'<rect class="fb eq" style="{delay(-(i * .19) % 1.5)};animation-duration:{.9 + (i % 5) * .14:.2f}s" x="{left + 40 + i * 7}" y="{top + 55 - (5 + (i * 5 % 9) * 1.6) / 2:.1f}" width="3" height="{5 + (i * 5 % 9) * 1.6:.1f}" fill="{SIGNAL}"/>'
                    for i in range(17))
     ox, oy = x + w - 84, y + h / 2
-    link = f'M{left + 206} {top + 55}H{ox - 70}L{ox - 46} {oy}'
+    link = f'M{left + 212} {top + 55}H{ox - 70}L{ox - 46} {oy}'
     css = appear('tg1', 4, 93, CHAT_CYCLE) + appear('tg2', 20, 93, CHAT_CYCLE) + appear('tg3', 48, 93, CHAT_CYCLE)
     css += '@keyframes dash{to{stroke-dashoffset:-24}}.dash{stroke-dasharray:4 4;animation:dash 1.6s linear infinite}'
     svg = f'''
-<g class="tg1"><rect x="{left}" y="{top}" width="178" height="30" fill="none" stroke="{GREY}"/>
- {text(left + 12, top + 20, 'Андрей: ты скоро?', 13, PAPER)}</g>
+<g class="tg1"><rect x="{left}" y="{top}" width="200" height="30" fill="none" stroke="{GREY}"/>
+ {text(left + 12, top + 20, 'Что хочешь послушать сегодня?', 13, PAPER)}</g>
 <g class="tg2"><rect x="{left}" y="{top + 38}" width="200" height="34" fill="{INK}" stroke="{PAPER}"/>
  <path d="M{left + 14} {top + 47}L{left + 28} {top + 55}L{left + 14} {top + 63}Z" fill="{PAPER}"/>
- {bars}{text(left + 162, top + 59.5, '0:07', 11, DIM, mono=True)}</g>
-<g class="tg3"><rect x="{left + 40}" y="{top + 86}" width="190" height="30" fill="{PAPER}"/>
- {text(left + 52, top + 106, 'Буду через 5 минут', 13, INK, 700)}</g>
+ {bars}<g class="fade" style="{delay(.3)}">{label(left + 164, top + 60, '0:07', DIM, size=8)}</g></g>
+<g class="tg3"><rect x="{left + 40}" y="{top + 86}" width="195" height="30" fill="{PAPER}"/>
+ {text(left + 52, top + 106, 'Музыка под любое настроение', 13, INK, 700)}</g>
 <path d="{link}" fill="none" stroke="{DIM}" class="dash"/>
 <rect x="-3" y="-3" width="6" height="6" fill="{SIGNAL}"><animateMotion dur="2.2s" repeatCount="indefinite" path="{link}"/></rect>
 <circle class="fb ripple" cx="{ox}" cy="{oy}" r="44" fill="none" stroke="{GREY}"/>

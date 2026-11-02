@@ -2,11 +2,12 @@ import base64
 import hashlib
 from pathlib import Path
 
-from kit import hero, stats, sections, links, footer, cards, readme
+from kit import hero, stats, sections, links, footer, cards, readme, art_prime
 from kit.data import (REPO_TOTAL, LANGUAGES, HIGHLIGHTS, STATS_META, LINKS, SECTIONS, PROJECTS, LAYOUT)
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'assets'
+KIT = ROOT / 'scripts' / 'kit'
 TELEGRAM = 'https://t.me/Oko_Kle'
 
 
@@ -27,10 +28,14 @@ class Writer:
                 stale.unlink()
 
 
-def load_avatar():
-    data = (ASSETS / 'avatar.png').read_bytes()
+def load_image(path):
+    data = path.read_bytes()
     mime = 'image/png' if data[:8] == b'\x89PNG\r\n\x1a\n' else 'image/jpeg'
     return mime, base64.b64encode(data).decode('ascii')
+
+
+def load_avatar():
+    return load_image(ASSETS / 'avatar.png')
 
 
 def project_card(writer, key, number, phase, wide=False):
@@ -44,6 +49,7 @@ def project_card(writer, key, number, phase, wide=False):
 
 
 def build():
+    art_prime.LOGO = load_image(KIT / 'logo128.png')
     writer = Writer()
     blocks = []
     phase = 0.0

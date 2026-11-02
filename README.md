@@ -17,11 +17,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Lekarctv0-creator/PlayLek/releases"><img src="./assets/playlek-desktop-a31b4be5fd0f.svg" width="100%" alt="PlayLek Desktop — плеер для Windows на Kotlin и Compose: библиотека, очередь, текст песни, трей, мини-плеер, звук через VLC, треки из Telegram." /></a>
+  <a href="https://github.com/Lekarctv0-creator/PlayLek/releases"><img src="./assets/playlek-desktop-d7aee4f7e281.svg" width="100%" alt="PlayLek Desktop — плеер для Windows на Kotlin и Compose: библиотека, очередь, текст песни, трей, мини-плеер, звук через VLC, треки из Telegram." /></a>
 </p>
 
 <p align="center">
-  <img src="./assets/playlek-40e31e4ebd80.svg" width="100%" alt="PlayLek — музыка из Telegram на Android: поиск, плейлисты, обложки, управление с трея, общие с ПК избранное и статистика. Kotlin, Compose." />
+  <img src="./assets/playlek-e2f81bce06e5.svg" width="100%" alt="PlayLek — музыка из Telegram на Android: поиск, плейлисты, обложки, управление с трея, общие с ПК избранное и статистика. Kotlin, Compose." />
 </p>
 
 <p align="center">

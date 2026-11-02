@@ -6,6 +6,9 @@ ROUTER_CYCLE = 8
 MODELS = ['claude-opus', 'gpt-5', 'local / qwen']
 TARGETS = ['Claude', 'GPT', 'Gemini', 'DeepSeek']
 
+# Иконка приложения PlayLek (mime, base64) — подставляется в build.py.
+LOGO = None
+
 
 def appear(name, start, cycle, end=94):
     return window_keyframes(name, start, end, fade=2.5, lift=4) + f'.{name}{{animation:{name} {cycle}s cubic-bezier(.2,.8,.2,1) infinite}}'
@@ -117,6 +120,13 @@ TRACKS = [('Ночной эфир', 'RΛKKΛ', '3:41'), ('Тёмная комн�
           ('Лофт', 'Ksusha', '3:20'), ('Осколки', 'Astra', '4:07')]
 
 
+def logo(x, y, size, radius, uid):
+    mime, data = LOGO
+    return (f'<clipPath id="{uid}"><rect x="{x}" y="{y}" width="{size}" height="{size}" rx="{radius}"/></clipPath>'
+            f'<image x="{x}" y="{y}" width="{size}" height="{size}" preserveAspectRatio="xMidYMid slice" '
+            f'clip-path="url(#{uid})" href="data:{mime};base64,{data}" xlink:href="data:{mime};base64,{data}"/>')
+
+
 def desktop(x, y, w, h):
     side, step, top = 168, 24, y + 74
     cx = x + side
@@ -131,6 +141,7 @@ def desktop(x, y, w, h):
         row = top + index * step
         icons += f'<rect x="{x + 16}" y="{row + 3}" width="10" height="10" rx="2" fill="{PAPER if index == 1 else DIM}"/>'
         names += text(x + 34, row + 12, name, 11.5, PAPER if index == 1 else GREY)
+    track = TRACKS[-1]
     rows = ''.join(
         f'<g class="rise" style="{delay(.5 + i * .1)}">'
         f'<rect x="{cx + 16}" y="{y + 96 + i * 26}" width="18" height="18" rx="3" fill="{INK}" stroke="{LINE}"/>'
@@ -144,13 +155,12 @@ def desktop(x, y, w, h):
         + text(cx + 51 + i * 74, y + 250, name, 9, PAPER if i == 0 else DIM, 600, anchor='middle', mono=True)
         for i, name in enumerate(['ночь', 'lofi', 'спорт']))
     bars = ''.join(
-        f'<rect class="fbb eq" style="{delay(-(k * .23) % 1.5)};animation-duration:{1 + (k % 4) * .2:.1f}s" '
+        f'<rect class="fb eq" style="{delay(-(k * .23) % 1.5)};animation-duration:{1 + (k % 4) * .2:.1f}s" '
         f'x="{x + w - 156 + k * 6}" y="{y + h - 40 - (3 + k % 5 * 2)}" width="3" height="{8 + k % 5 * 4}" fill="{SIGNAL}"/>'
         for k in range(16))
     svg = f'''
 <rect x="{x + 12}" y="{y + 30}" width="{side - 24}" height="38" rx="9" fill="{INK}" stroke="{LINE}"/>
-<rect x="{x + 22}" y="{y + 39}" width="20" height="20" rx="6" fill="{SIGNAL}"/>
-<path d="M{x + 29} {y + 45}L{x + 37} {y + 49}L{x + 29} {y + 53}Z" fill="{INK}"/>
+{logo(x + 22, y + 39, 20, 6, 'sb-logo')}
 {text(x + 48, y + 48, 'PlayLek', 12.5, PAPER, 800)}{text(x + 48, y + 60, 'Desktop · v1.2.18', 8, DIM, mono=True)}
 <rect x="{x + 10}" y="{top - 9}" width="{side - 20}" height="21" rx="7" fill="{SIGNAL}" opacity=".16"/>
 <g class="mpick"><rect x="{x + 10}" y="{top - 9}" width="{side - 20}" height="21" rx="7" fill="{SIGNAL}" opacity=".22"/></g>
@@ -169,10 +179,10 @@ def desktop(x, y, w, h):
 {chips}
 <rect x="{cx}" y="{y + h - 58}" width="{w - side}" height="58" fill="{INK}"/>
 <path d="M{cx} {y + h - 58}H{x + w}" stroke="{LINE}"/>
-<rect x="{cx + 16}" y="{y + h - 48}" width="40" height="40" rx="6" fill="{SIGNAL}" opacity=".9"/>
-<path d="M{cx + 31} {y + h - 36}L{cx + 45} {y + h - 28}L{cx + 31} {y + h - 20}Z" fill="{INK}"/>
-{text(cx + 68, y + h - 34, 'Ночной эфир', 12, PAPER, 700)}
-{text(cx + 68, y + h - 21, 'RΛKKΛ · плейлист «темнота»', 9, DIM, mono=True)}
+<rect x="{cx + 16}" y="{y + h - 48}" width="40" height="40" rx="8" fill="{INK}" stroke="{LINE}"/>
+{logo(cx + 17, y + h - 47, 38, 7, 'pb-logo')}
+{text(cx + 68, y + h - 34, track[0], 12, PAPER, 700)}
+{text(cx + 68, y + h - 21, f'{track[1]} · плейлист «темнота»', 9, DIM, mono=True)}
 <rect x="{cx + 68}" y="{y + h - 41}" width="{w - side - 150}" height="2" fill="{LINE}"/>
 <rect class="fill" x="{cx + 68}" y="{y + h - 41}" width="{w - side - 150}" height="2" fill="{SIGNAL}"/>
 {bars}
