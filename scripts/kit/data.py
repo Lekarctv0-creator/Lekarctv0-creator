@@ -11,7 +11,7 @@ LANGUAGES = [
 HIGHLIGHTS = [
     (LANGUAGE_COUNT, '', 'языка', 'Kotlin · Rust · Python · HTML'),
     (28, '', 'релизов PlayLek', 'android 0.2.19 + pc 1.3.1'),
-    (3, '', 'публичных проекта', 'PlayLek · Mini App · бот'),
+    (3, '', 'публичных проекта', 'PlayLek'),
 ]
 STATS_META = 'github · ноябрь 2026'
 

@@ -49,7 +49,7 @@ def designer(x, y, w, h):
 <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="18" fill="{INK}" stroke="{PAPER}"/>
 <rect x="{px + pw / 2 - 22}" y="{py + 8}" width="44" height="6" rx="3" fill="{LINE}"/>
 {label(px + 14, py + 38, 'мой дизайнер', PAPER, size=10)}
-{label(px + pw - 14, py + 38, 'mini app', DIM, anchor='end', size=9)}
+{label(px + pw - 14, py + 38, 'app', DIM, anchor='end', size=9)}
 <rect x="{ix}" y="{iy}" width="{iw}" height="{ih}" fill="{INK}" stroke="{LINE}"/>
 <g>{room(ix + 4, iy + 4, iw - 8, ih - 8, DIM, False)}</g>
 <clipPath id="after"><rect x="{ix}" y="{iy}" width="0" height="{ih}"><animate attributeName="width" dur="{ROOM_CYCLE}s" repeatCount="indefinite" values="{sweep}" keyTimes="{times}" calcMode="spline" keySplines="0 0 1 1;.65 0 .35 1;0 0 1 1;.65 0 .35 1"/></rect></clipPath>
