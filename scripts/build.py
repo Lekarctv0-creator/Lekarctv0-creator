@@ -68,7 +68,7 @@ def build():
             blocks.append(readme.block(*items))
         elif kind == 'strip':
             src = writer.save('releases', releases.build(*STRIP))
-            blocks.append(readme.block(readme.linked('https://github.com/Lekarctv0-creator/PlayLek/releases/latest', src, 'PlayLek — 28 релизов, Android 0.2.19, Windows 1.3.1. Скачать.', '100%')))
+            blocks.append(readme.block(readme.linked('https://lekarctv0-creator.github.io/PlayLek/', src, 'PlayLek — 28 релизов, Android 0.2.19, Windows 1.3.1. Скачать.', '100%')))
         elif kind == 'stats':
             src = writer.save('stats', stats.build(REPO_TOTAL, LANGUAGES, HIGHLIGHTS, STATS_META))
             blocks.append(readme.block(readme.image(src, f'{REPO_TOTAL} публичных репозитория, языки и проекты в цифрах.', '100%')))

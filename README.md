@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Lekarctv0-creator/PlayLek/releases/latest"><img src="./assets/releases-4c41b59df504.svg" width="100%" alt="PlayLek — 28 релизов, Android 0.2.19, Windows 1.3.1. Скачать." /></a>
+  <a href="https://lekarctv0-creator.github.io/PlayLek/"><img src="./assets/releases-4c41b59df504.svg" width="100%" alt="PlayLek — 28 релизов, Android 0.2.19, Windows 1.3.1. Скачать." /></a>
 </p>
 
 <p align="center">
