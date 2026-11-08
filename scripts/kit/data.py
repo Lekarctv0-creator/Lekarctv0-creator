@@ -29,11 +29,11 @@ SECTIONS = {
 
 PROJECTS = {
     'playlek-desktop': dict(
-        kind='DESKTOP · RUST', title='PlayLek Desktop', title_size=56, art='desktop',
+        kind='DESKTOP · RUST', title='PlayLek Desktop', title_size=56, art='photo',
         lines=['Плеер для Windows на Rust: библиотека, очередь,', 'текст песни, трей, мини-плеер и «слушать вместе».', 'Треки — из Telegram, обновления — сами.'],
         chips=['Rust', 'Slint', 'TDLib'],
-        cta='открыть релизы', url_label='PC 1.3.1 · Android 0.2.19',
-        url='https://github.com/Lekarctv0-creator/PlayLek/releases',
+        cta='репозиторий', url_label='PC 1.3.1 · Android 0.2.19',
+        url='https://github.com/Lekarctv0-creator/PlayLek',
         alt='PlayLek Desktop — плеер для Windows на Rust: библиотека, очередь, текст песни, трей, мини-плеер, «слушать вместе», треки из Telegram.'),
     'playlek': dict(
         kind='PLAYLEK · KOTLIN', title='PlayLek', art='telegram',

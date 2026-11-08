@@ -1,4 +1,4 @@
-from . import art_voice, art_prime, art_web, art_clients
+from . import art_voice, art_prime, art_web, art_clients, art_photo
 from .canvas import document, frame, text, label, delay, tags, arrow
 from .theme import FULL_WIDTH, HALF_WIDTH, PAPER, GREY, LINE, SIGNAL, INK
 
@@ -10,6 +10,7 @@ ARTS = {
     'interject': art_voice.interject,
     'cli': art_prime.cli,
     'desktop': art_prime.desktop,
+    'photo': art_photo.photo,
     'router': art_prime.router,
     'proxy': art_prime.proxy,
     'portfolio': art_web.portfolio,
@@ -25,6 +26,8 @@ ARTS = {
 
 def plate(x, y, w, h, project, figure):
     art, css = ARTS[project['art']](x, y, w, h)
+    if project['art'] == 'photo':  # без рамки и сетки: фото растворяется в плашке
+        return art + label(x + w, y + h + 18, f'fig. {figure}', GREY, anchor='end', size=10), css
     svg = (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{INK}"/>'
            f'<clipPath id="plate"><rect x="{x}" y="{y}" width="{w}" height="{h}"/></clipPath>'
            f'<g clip-path="url(#plate)"><rect x="{x}" y="{y}" width="{w}" height="{h}" fill="url(#grid)"/>{art}</g>'
