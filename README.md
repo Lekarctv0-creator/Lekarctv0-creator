@@ -1,13 +1,22 @@
-<p align="center"><img src="./assets/hero.svg" width="100%" alt="Готов к идеям. TSUKI | ✞ RΛKKΛ ✞ — создатель PlayLek." /></p>
-
 <p align="center">
-  <a href="https://t.me/Oko_Kleima"><img src="https://img.shields.io/badge/Telegram-@Oko__Kleima-0d0d12?style=for-the-badge&logo=telegram&logoColor=ff6fae" alt="Telegram" /></a>
-  <a href="https://lekarctv0-creator.github.io/PlayLek/"><img src="https://img.shields.io/badge/Сайт-PlayLek-0d0d12?style=for-the-badge&logo=githubpages&logoColor=ff6fae" alt="Сайт PlayLek" /></a>
-  <a href="https://github.com/Lekarctv0-creator/PlayLek/releases/latest"><img src="https://img.shields.io/github/v/release/Lekarctv0-creator/PlayLek?style=for-the-badge&label=PlayLek&color=0d0d12&labelColor=0d0d12" alt="Последний релиз PlayLek" /></a>
+  <img src="./assets/hero-22bf8c65420d.svg" width="100%" alt="TSUKI | ✞ RΛKKΛ ✞ — десктоп-приложения, музыка, Telegram-боты и аудио-движки." />
 </p>
 
-<p align="center"><img src="./assets/about.svg" width="100%" alt="Готов к идеям. Чистый код. Красивый UI/UX. Создал PlayLek." /></p>
+<p align="center">
+  <a href="https://t.me/Oko_Kleima"><img src="./assets/link-ideas-45c6c9751b69.svg" width="24%" alt="Готов к идеям — напиши в Telegram" /></a>
+  <a href="https://github.com/Lekarctv0-creator"><img src="./assets/link-code-c95100859987.svg" width="24%" alt="Чистый код — Rust · Kotlin · Python" /></a>
+  <a href="https://lekarctv0-creator.github.io/PlayLek/"><img src="./assets/link-ui-ec7af2a2dcfa.svg" width="24%" alt="Красивый UI/UX — тёмные темы и анимации" /></a>
+  <a href="https://github.com/Lekarctv0-creator/PlayLek/releases/latest"><img src="./assets/link-playlek-04f82d3e4fcb.svg" width="24%" alt="Создал PlayLek — релизы для Android и ПК" /></a>
+</p>
 
-<p align="center"><a href="https://github.com/Lekarctv0-creator/PlayLek/releases/latest"><img src="./assets/playlek.svg" width="100%" alt="PlayLek — музыка из Telegram: 28 релизов, Android 0.2.19, Windows 1.3.1. Скачать." /></a></p>
+<p align="center">
+  <a href="https://github.com/Lekarctv0-creator/PlayLek/releases"><img src="./assets/playlek-desktop-06a1f2433da2.svg" width="100%" alt="PlayLek Desktop — плеер для Windows на Rust: библиотека, очередь, текст песни, трей, мини-плеер, «слушать вместе», треки из Telegram." /></a>
+</p>
 
-<p align="center"><a href="https://t.me/Oko_Kleima"><img src="./assets/footer.svg" width="100%" alt="Есть идея? Напиши в Telegram: t.me/Oko_Kleima" /></a></p>
+<p align="center">
+  <img src="./assets/playlek-0157061d6fa5.svg" width="100%" alt="PlayLek — музыка из Telegram на Android: поиск, плейлисты, обложки, общие с ПК избранное и статистика. Kotlin, Compose." />
+</p>
+
+<p align="center">
+  <a href="https://t.me/Oko_Kleima"><img src="./assets/footer-81fa976bbb5d.svg" width="100%" alt="Есть идея? Напиши — обсудим и сделаем. Написать в Telegram." /></a>
+</p>
