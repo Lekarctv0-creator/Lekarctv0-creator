@@ -53,7 +53,11 @@ PROJECTS = {
 LAYOUT = [
     ('hero',),
     ('links',),
+    ('strip',),
     ('wide', 'playlek-desktop'),
-    ('wide', 'playlek'),
     ('footer',),
 ]
+
+STRIP = ('PlayLek — музыка из Telegram',
+         [('28', 'релизов'), ('2', 'платформы'), ('0.2.19', 'android'), ('1.3.1', 'windows')],
+         'Скачать')

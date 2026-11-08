@@ -2,8 +2,8 @@ import base64
 import hashlib
 from pathlib import Path
 
-from kit import hero, stats, sections, links, footer, cards, readme, art_prime
-from kit.data import (REPO_TOTAL, LANGUAGES, HIGHLIGHTS, STATS_META, LINKS, SECTIONS, PROJECTS, LAYOUT)
+from kit import hero, stats, sections, links, footer, cards, readme, art_prime, releases
+from kit.data import (REPO_TOTAL, LANGUAGES, HIGHLIGHTS, STATS_META, LINKS, SECTIONS, PROJECTS, LAYOUT, STRIP)
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'assets'
@@ -66,6 +66,9 @@ def build():
                 src = writer.save(key, links.build(index + 1, label, caption, index * .25))
                 items.append(readme.linked(href, src, f'{label} — {caption}', '24%'))
             blocks.append(readme.block(*items))
+        elif kind == 'strip':
+            src = writer.save('releases', releases.build(*STRIP))
+            blocks.append(readme.block(readme.linked('https://github.com/Lekarctv0-creator/PlayLek/releases/latest', src, 'PlayLek — 28 релизов, Android 0.2.19, Windows 1.3.1. Скачать.', '100%')))
         elif kind == 'stats':
             src = writer.save('stats', stats.build(REPO_TOTAL, LANGUAGES, HIGHLIGHTS, STATS_META))
             blocks.append(readme.block(readme.image(src, f'{REPO_TOTAL} публичных репозитория, языки и проекты в цифрах.', '100%')))

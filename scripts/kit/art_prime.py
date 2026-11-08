@@ -116,8 +116,8 @@ def proxy(x, y, w, h):
 
 DESK_CYCLE = 12
 MENU = ['Музыка', 'Библиотека', 'Статистика', 'PhosmAi', 'Профиль', 'Пульт', 'Настройки', 'Поддержка']
-TRACKS = [('Ночной эфир', 'RΛKKΛ', '3:41'), ('Тёмная комната', 'Nova', '2:58'),
-          ('Лофт', 'Ksusha', '3:20'), ('Осколки', 'Astra', '4:07')]
+TRACKS = [('Мона Лиза', 'Асия', '2:25'), ('Im Sorry Mom', 'Marino', '1:47'),
+          ('СТИКЕР', 'СМН, Lida', '2:12'), ('Сукины дети', '1.kLA$', '3:39')]
 
 
 def logo(x, y, size, radius, uid):
@@ -141,14 +141,14 @@ def desktop(x, y, w, h):
         row = top + index * step
         icons += f'<rect x="{x + 16}" y="{row + 3}" width="10" height="10" rx="2" fill="{PAPER if index == 1 else DIM}"/>'
         names += text(x + 34, row + 12, name, 11.5, PAPER if index == 1 else GREY)
-    track = TRACKS[-1]
+    track = TRACKS[1]
     rows = ''.join(
         f'<g class="rise" style="{delay(.5 + i * .1)}">'
-        f'<rect x="{cx + 16}" y="{y + 96 + i * 26}" width="18" height="18" rx="3" fill="{INK}" stroke="{LINE}"/>'
-        f'<rect x="{cx + 19}" y="{y + 99 + i * 26}" width="12" height="12" rx="2" fill="{SIGNAL if i == 0 else DIM}" opacity="{0.85 if i == 0 else 0.4}"/>'
-        f'{text(cx + 44, y + 108 + i * 26, name, 11.5, PAPER if i == 0 else GREY)}'
-        f'{text(cx + 44, y + 118 + i * 26, artist, 9, DIM, mono=True)}'
-        f'{text(x + w - 18, y + 111 + i * 26, length, 9, DIM, anchor="end", mono=True)}</g>'
+        f'<rect x="{cx + 16}" y="{y + 92 + i * 25}" width="18" height="18" rx="3" fill="{INK}" stroke="{LINE}"/>'
+        f'<rect x="{cx + 19}" y="{y + 95 + i * 25}" width="12" height="12" rx="2" fill="{SIGNAL if i == 0 else DIM}" opacity="{0.85 if i == 0 else 0.4}"/>'
+        f'{text(cx + 44, y + 104 + i * 25, name, 11.5, PAPER if i == 0 else GREY)}'
+        f'{text(cx + 44, y + 114 + i * 25, artist, 9, DIM, mono=True)}'
+        f'{text(x + w - 18, y + 107 + i * 25, length, 9, DIM, anchor="end", mono=True)}</g>'
         for i, (name, artist, length) in enumerate(TRACKS))
     chips = ''.join(
         f'<rect x="{cx + 18 + i * 74}" y="{y + 238}" width="66" height="18" rx="9" fill="none" stroke="{SIGNAL if i == 0 else LINE}"/>'
@@ -167,24 +167,25 @@ def desktop(x, y, w, h):
 {icons}{names}
 <path d="M{x + 12} {y + h - 52}H{x + side - 12}" stroke="{LINE}"/>
 <circle cx="{x + 30}" cy="{y + h - 32}" r="10" fill="{INK}" stroke="{GREY}"/>
-{text(x + 46, y + h - 30, '@Oko_Kleima', 9, DIM, mono=True)}
+{text(x + 46, y + h - 30, '@Oko_Kleima', 9, DIM)}
 <path d="M{cx} {y + 34}V{y + h - 58}" stroke="{LINE}"/>
-{label(cx + 18, y + 28, 'библиотека', PAPER, size=10.5)}
-{label(x + w - 18, y + 28, 'офлайн · 128 треков', DIM, anchor='end', size=9.5)}
-<rect x="{cx + 18}" y="{y + 46}" width="{w - side - 36}" height="22" rx="4" fill="{INK}" stroke="{GREY}"/>
-{text(cx + 28, y + 61, 'поиск по трекам и плейлистам', 10, DIM, mono=True)}
+{text(cx + 18, y + 38, 'Библиотека', 17, PAPER, 800)}
+<rect x="{cx + 18}" y="{y + 46}" width="86" height="16" rx="8" fill="{LINE}"/>
+{text(cx + 26, y + 57.5, 'Избранное 105', 8.5, PAPER, 600)}
+{text(cx + 116, y + 57.5, 'Коллекции 5', 8.5, GREY)}{text(cx + 176, y + 57.5, 'Офлайн', 8.5, GREY)}{text(cx + 220, y + 57.5, 'История', 8.5, GREY)}
+<rect x="{cx + 18}" y="{y + 68}" width="96" height="18" rx="9" fill="{PAPER}"/>
+{text(cx + 66, y + 80.5, '▶ Слушать', 9, INK, 700, anchor='middle')}
+<rect x="{cx + 122}" y="{y + 68}" width="82" height="18" rx="9" fill="none" stroke="{LINE}"/>
+{text(cx + 163, y + 80.5, 'Перемешать', 9, PAPER, 600, anchor='middle')}
 {rows}
-<path d="M{cx + 18} {y + 214}H{x + w - 18}" stroke="{LINE}"/>
-{label(cx + 18, y + 230, 'коллекции', DIM, size=9.5)}
-{chips}
-<rect x="{cx}" y="{y + h - 58}" width="{w - side}" height="58" fill="{INK}"/>
+<rect x="{cx + 6}" y="{y + h - 56}" width="{w - side - 12}" height="52" rx="10" fill="{SIGNAL_DEEP}"/>
 <path d="M{cx} {y + h - 58}H{x + w}" stroke="{LINE}"/>
 <rect x="{cx + 16}" y="{y + h - 48}" width="40" height="40" rx="8" fill="{INK}" stroke="{LINE}"/>
 {logo(cx + 17, y + h - 47, 38, 7, 'pb-logo')}
 {text(cx + 68, y + h - 34, track[0], 12, PAPER, 700)}
-{text(cx + 68, y + h - 21, f'{track[1]} · плейлист «темнота»', 9, DIM, mono=True)}
-<rect x="{cx + 68}" y="{y + h - 41}" width="{w - side - 150}" height="2" fill="{LINE}"/>
-<rect class="fill" x="{cx + 68}" y="{y + h - 41}" width="{w - side - 150}" height="2" fill="{SIGNAL}"/>
+{text(cx + 68, y + h - 21, track[1], 9, GREY)}
+<rect x="{cx + 68}" y="{y + h - 15}" width="{w - side - 150}" height="2" fill="{LINE}"/>
+<rect class="fill" x="{cx + 68}" y="{y + h - 15}" width="{w - side - 150}" height="2" fill="{SIGNAL}"/>
 {bars}
 <path d="M{x + w - 14} {y + h - 30}V{y + h - 46}M{x + w - 20} {y + h - 30}V{y + h - 40}M{x + w - 8} {y + h - 30}V{y + h - 40}" stroke="{GREY}" stroke-width="1.4"/>'''
     return svg, css
