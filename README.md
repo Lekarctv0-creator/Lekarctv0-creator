@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Lekarctv0-creator/PlayLek"><img src="./assets/playlek-desktop-d9b4b02cc0fe.svg" width="100%" alt="PlayLek Desktop — плеер для Windows на Rust: библиотека, очередь, текст песни, трей, мини-плеер, «слушать вместе», треки из Telegram." /></a>
+  <a href="https://github.com/Lekarctv0-creator/PlayLek"><img src="./assets/playlek-desktop-57a02416c529.svg" width="100%" alt="PlayLek Desktop — плеер для Windows на Rust: библиотека, очередь, текст песни, трей, мини-плеер, «слушать вместе», треки из Telegram." /></a>
 </p>
 
 <p align="center">
