@@ -33,7 +33,7 @@ p{margin:0 0 16px}
 <h1>TSUKI | ✞ RΛKKΛ ✞</h1>
 <p class="nick">Lekarctv0-creator</p>
 <p class="bio">✞ TSUKI | RΛKKΛ ✞ · dark-mode dev · код и музыка в темноте · PlayLek · Python · Kotlin · Rust</p>
-<a class="btn" href="https://t.me/Oko_Kle" style="margin-bottom:8px">Telegram — @Oko_Kle</a>
+<a class="btn" href="https://t.me/Oko_Kleima" style="margin-bottom:8px">Telegram — @Oko_Kleimaima</a>
 <a class="btn" href="#">Follow</a>
 </div></aside>
 <main>

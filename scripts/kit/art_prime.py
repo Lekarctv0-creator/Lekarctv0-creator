@@ -161,13 +161,13 @@ def desktop(x, y, w, h):
     svg = f'''
 <rect x="{x + 12}" y="{y + 30}" width="{side - 24}" height="38" rx="9" fill="{INK}" stroke="{LINE}"/>
 {logo(x + 22, y + 39, 20, 6, 'sb-logo')}
-{text(x + 48, y + 48, 'PlayLek', 12.5, PAPER, 800)}{text(x + 48, y + 60, 'Desktop · v1.2.18', 8, DIM, mono=True)}
+{text(x + 48, y + 48, 'PlayLek', 12.5, PAPER, 800)}{text(x + 48, y + 60, 'Desktop · v1.3.1', 8, DIM, mono=True)}
 <rect x="{x + 10}" y="{top - 9}" width="{side - 20}" height="21" rx="7" fill="{SIGNAL}" opacity=".16"/>
 <g class="mpick"><rect x="{x + 10}" y="{top - 9}" width="{side - 20}" height="21" rx="7" fill="{SIGNAL}" opacity=".22"/></g>
 {icons}{names}
 <path d="M{x + 12} {y + h - 52}H{x + side - 12}" stroke="{LINE}"/>
 <circle cx="{x + 30}" cy="{y + h - 32}" r="10" fill="{INK}" stroke="{GREY}"/>
-{text(x + 46, y + h - 30, '@Oko_Kle', 9, DIM, mono=True)}
+{text(x + 46, y + h - 30, '@Oko_Kleima', 9, DIM, mono=True)}
 <path d="M{cx} {y + 34}V{y + h - 58}" stroke="{LINE}"/>
 {label(cx + 18, y + 28, 'библиотека', PAPER, size=10.5)}
 {label(x + w - 18, y + 28, 'офлайн · 128 треков', DIM, anchor='end', size=9.5)}

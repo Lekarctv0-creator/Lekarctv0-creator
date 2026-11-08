@@ -4,7 +4,7 @@ from .theme import FULL_WIDTH, PAPER, GREY, DIM, LINE, SIGNAL, INK
 
 HEIGHT = 590
 ROLES = ['десктоп-приложения', 'музыкальные плееры', 'telegram-боты', 'mini apps', 'аудио-движки']
-STACK = ['Python', 'Kotlin', 'Rust', 'Compose', 'TDLib', 'VLC', 'Inno Setup', 'MCP']
+STACK = ['Python', 'Kotlin', 'Rust', 'Slint', 'Compose', 'TDLib', 'Workers', 'MCP']
 MARQUEE = ['ДЕСКТОП', 'МУЗЫКА', 'TELEGRAM-БОТЫ', 'MINI APPS', 'АУДИО-ДВИЖКИ', 'RUST']
 ROLE_STEP = 2.6
 STACK_STEP = 1.4

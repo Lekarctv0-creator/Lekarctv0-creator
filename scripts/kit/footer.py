@@ -17,7 +17,7 @@ def button(x, y, caption):
 
 def build():
     css = '@keyframes nudge{0%,70%,100%{transform:translate(0,0)}80%{transform:translate(4px,-4px)}}.nudge{animation:nudge 3s ease-in-out infinite}'
-    body = (frame(FULL_WIDTH, HEIGHT, 'контакт', 't.me/oko_kle', phase=6)
+    body = (frame(FULL_WIDTH, HEIGHT, 'контакт', 't.me/oko_kleima', phase=6)
             + '<clipPath id="big"><rect x="20" y="64" width="760" height="140"/></clipPath>'
             + f'<g clip-path="url(#big)"><g class="reveal">{text(22, 178, "Есть идея?", 116, PAPER, 800, spacing=-5)}</g></g>'
             + f'<g class="rise" style="{delay(.5)}">{text(28, 230, "Напиши — соберём что-то громкое.", 22, GREY)}</g>'
@@ -29,4 +29,4 @@ def build():
             + f'<path d="M620 284H{FULL_WIDTH - 28}" stroke="{LINE}"/>'
             + oscilloscope(620, 284, FULL_WIDTH - 648, 22, SIGNAL, duration=5.6, stroke=1.4)
             + text(FULL_WIDTH - 28, 336, '© 2026 tsuki', 11, DIM, anchor='end', mono=True))
-    return document(FULL_WIDTH, HEIGHT, body, 'Есть идея? Напиши — соберём что-то громкое. Написать в Telegram: t.me/Oko_Kle', css=css)
+    return document(FULL_WIDTH, HEIGHT, body, 'Есть идея? Напиши — соберём что-то громкое. Написать в Telegram: t.me/Oko_Kleima', css=css)

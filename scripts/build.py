@@ -8,7 +8,7 @@ from kit.data import (REPO_TOTAL, LANGUAGES, HIGHLIGHTS, STATS_META, LINKS, SECT
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'assets'
 KIT = ROOT / 'scripts' / 'kit'
-TELEGRAM = 'https://t.me/Oko_Kle'
+TELEGRAM = 'https://t.me/Oko_Kleima'
 
 
 class Writer:

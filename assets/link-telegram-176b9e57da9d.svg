@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="356" height="92" viewBox="0 0 356 92" role="img" aria-labelledby="t">
-<title id="t">Telegram — @Oko_Kle</title>
+<title id="t">Telegram — @Oko_Kleima</title>
 <defs>
  <clipPath id="clip"><rect width="356" height="92" rx="6"/></clipPath>
  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M0 .5H2M.5 0V2" stroke="#f4f4f6" stroke-opacity=".14"/></pattern>
@@ -41,5 +41,5 @@ text{font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,system-ui,sans-seri
 .register{animation:register 10s cubic-bezier(.77,0,.18,1) infinite alternate}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 @keyframes nudge{0%,70%,100%{transform:translate(0,0)}80%{transform:translate(4px,-4px)}}.nudge{animation:nudge 3.6s ease-in-out infinite}</style>
-<rect width="356" height="92" rx="6" fill="#0b0b0d"/><path d="M12 22V12H22M12 70V80H22M344 22V12H334M344 70V80H334" fill="none" stroke="#55555d" stroke-width="1.2"/><rect x=".5" y=".5" width="355" height="91" rx="6" fill="none" stroke="#26262b"/><text x="24.0" y="30.0" font-size="11" fill="#ff2d78" font-weight="600" letter-spacing="1.6" class="mono">01</text><text x="24.0" y="58.0" font-size="22" fill="#f4f4f6" font-weight="700">Telegram</text><rect class="fbl grow" style="animation-delay:0.40s" x="24" y="66" width="93" height="2" fill="#ff2d78"/><text x="24.0" y="82.0" font-size="11.5" fill="#8b8b93" class="mono">@Oko_Kle</text><g transform="translate(320 46.0)"><g class="nudge" style="animation-delay:0.00s"><path d="M-9 9L9 -9M-3.6 -9H9V3.6" fill="none" stroke="#f4f4f6" stroke-width="1.8" stroke-linecap="square"/></g></g>
+<rect width="356" height="92" rx="6" fill="#0b0b0d"/><path d="M12 22V12H22M12 70V80H22M344 22V12H334M344 70V80H334" fill="none" stroke="#55555d" stroke-width="1.2"/><rect x=".5" y=".5" width="355" height="91" rx="6" fill="none" stroke="#26262b"/><text x="24.0" y="30.0" font-size="11" fill="#ff2d78" font-weight="600" letter-spacing="1.6" class="mono">01</text><text x="24.0" y="58.0" font-size="22" fill="#f4f4f6" font-weight="700">Telegram</text><rect class="fbl grow" style="animation-delay:0.40s" x="24" y="66" width="93" height="2" fill="#ff2d78"/><text x="24.0" y="82.0" font-size="11.5" fill="#8b8b93" class="mono">@Oko_Kleima</text><g transform="translate(320 46.0)"><g class="nudge" style="animation-delay:0.00s"><path d="M-9 9L9 -9M-3.6 -9H9V3.6" fill="none" stroke="#f4f4f6" stroke-width="1.8" stroke-linecap="square"/></g></g>
 </svg>
