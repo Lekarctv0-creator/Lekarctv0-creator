@@ -8,6 +8,6 @@
 
 <p align="center"><a href="https://github.com/Lekarctv0-creator/PlayLek/releases/latest"><img src="./assets/playlek.svg" width="100%" alt="PlayLek — музыка из Telegram на Android и Windows. Скачать последний релиз." /></a></p>
 
-<p align="center"><img src="./assets/projects.svg" width="100%" alt="PlayLek Support и Temnica Morali — Telegram-боты." /></p>
+<p align="center"><img src="./assets/projects.svg" width="100%" alt="PlayLek Support — бот поддержки PlayLek." /></p>
 
 <p align="center"><a href="https://t.me/Oko_Kleima"><img src="./assets/footer.svg" width="100%" alt="Есть идея? Напиши в Telegram: t.me/Oko_Kleima" /></a></p>
