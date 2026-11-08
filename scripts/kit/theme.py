@@ -9,9 +9,10 @@ SIGNAL_DEEP = '#2a0c18'
 
 from pathlib import Path
 
-# Neucha (SIL OFL) вшит в каждый SVG: внешние шрифты в <img> не грузятся.
-FONT_B64 = (Path(__file__).with_name('font_neucha.b64')).read_text().strip()
-SANS = "'Neucha','Ink Free','Segoe UI',system-ui,sans-serif"
+# Ink Free (fsType 8: встраивание разрешено) вшит в каждый SVG: внешние шрифты в <img> не грузятся.
+FONT_B64 = (Path(__file__).with_name('font_inkfree.b64')).read_text().strip()
+SANS = "'InkFree','Ink Free','Neucha',system-ui,sans-serif"
+NORMAL = "'Segoe UI','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif"
 MONO = SANS
 
 FULL_WIDTH = 1100
@@ -19,7 +20,7 @@ HALF_WIDTH = 540
 REGISTER_CYCLE = 10
 
 STYLE = f'''
-@font-face{{font-family:'Neucha';src:url(data:font/woff2;base64,{FONT_B64}) format('woff2')}}
+@font-face{{font-family:'InkFree';src:url(data:font/woff2;base64,{FONT_B64}) format('woff2')}}
 text{{font-family:{SANS}}}
 .mono{{font-family:{MONO}}}
 .fb{{transform-box:fill-box;transform-origin:center}}

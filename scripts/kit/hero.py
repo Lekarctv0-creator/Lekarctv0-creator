@@ -1,6 +1,6 @@
 from .canvas import document, frame, text, label, delay, crop_marks
 from .scope import oscilloscope
-from .theme import FULL_WIDTH, PAPER, GREY, DIM, LINE, SIGNAL, INK
+from .theme import FULL_WIDTH, PAPER, GREY, DIM, LINE, SIGNAL, INK, NORMAL
 
 HEIGHT = 590
 ROLES = ['десктоп-приложения', 'музыкальные плееры', 'telegram-боты', 'аудио-движки', 'интерфейсы']
@@ -15,7 +15,7 @@ def name():
     return f'''
 <clipPath id="name-clip"><rect x="20" y="60" width="840" height="200"/></clipPath>
 <g clip-path="url(#name-clip)"><g class="reveal" style="{delay(.1)}">
- <text x="22" y="222" font-size="178" font-weight="800" letter-spacing="-7" fill="{PAPER}">tsuki<tspan fill="{SIGNAL}">✞</tspan></text>
+ <text x="22" y="222" font-size="178" font-weight="800" letter-spacing="-7" fill="{PAPER}" style="font-family:{NORMAL}">tsuki<tspan fill="{SIGNAL}">✞</tspan></text>
 </g></g>
 <g class="rise" style="{delay(.7)}">{text(30, 270, 'Музыка, десктоп-приложения и Telegram — от идеи до релиза.', 20, GREY)}</g>'''
 
